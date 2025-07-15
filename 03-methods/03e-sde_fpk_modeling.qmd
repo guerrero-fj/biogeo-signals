@@ -1,0 +1,16 @@
+# SDE and FPK Modeling
+
+## Motivation
+
+This section illustrates how observing only probability distributions—without knowing the governing dynamics—can benefit from an information geometry approach.
+
+## Simple SDE
+
+- Brownian motion, OU process
+- IG metrics over trajectories
+
+## Toward FPK
+
+- Use KDE or histogram to estimate PDFs
+- FPK as evolution of distribution
+- Limits of inference when dynamics are hidden

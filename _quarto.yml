@@ -1,0 +1,29 @@
+project:
+  type: book
+book:
+  title: "Biogeochemical Signals of Watershed Response to Disturbance"
+  author: "Francisco J. Guerrero"
+  chapters:
+    - index.qmd
+    - 00-preface.qmd
+    - 01-introduction.qmd
+    - 02-theory.qmd
+    - part: "Methods"
+      chapters:
+        - 03-methods/03a-psd_simulation.qmd
+        - 03-methods/03b-entropy_divergence.qmd
+        - 03-methods/03c-metrics_explained.qmd
+        - 03-methods/03d-stat_tests.qmd
+        - 03-methods/03e-sde_fpk_modeling.qmd
+    - part: "Case Studies"
+      chapters:
+        - 04-case_studies/04a-alsea.qmd
+        - 04-case_studies/04b-hj_andrews.qmd
+        - 04-case_studies/04c-loon_lake.qmd
+    - 05-synthesis.qmd
+    - 06-conclusion.qmd
+    - part: "Appendices"
+      chapters:
+        - appendix/a-math_foundations.qmd
+        - appendix/b-entropy_algorithms.qmd
+        - appendix/c-code_snippets.qmd

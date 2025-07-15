@@ -1,0 +1,3 @@
+# Cross-Site Synthesis
+
+What do signal trajectories reveal across basins?

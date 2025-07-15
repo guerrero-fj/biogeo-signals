@@ -1,0 +1,3 @@
+# Appendix C: Code Snippets
+
+Reusable code blocks for metrics and figures.

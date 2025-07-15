@@ -1,0 +1,64 @@
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# R and RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.Rapp.history
+
+# Quarto and LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
+*.synctex.gz
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.qmd~
+
+# Python/reticulate artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+.venv/
+.env/
+.envrc
+*.egg-info/
+.Python
+
+# Temporary files
+*.swp
+*.tmp
+*.bak
+*.old
+*~
+
+# Cache and build
+.cache/
+build/
+dist/
+node_modules/
+
+# Custom output folders
+plots/
+data/derived/
+scripts/__pycache__/
+
+# Ignore secrets or credentials
+*.key
+*.pem
+*.env.local
+secrets.yml

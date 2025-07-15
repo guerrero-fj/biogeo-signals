@@ -1,0 +1,69 @@
+# Theoretical Framework
+
+## From Trajectories to Distributions: Why Information Geometry?
+
+In sedimentary and biogeochemical systems, the signals we observe—such as 
+particle size distributions (PSDs), organic carbon content, or elemental 
+ratios—emerge from the aggregation of numerous micro-interactions. These include
+physical transport processes, fragmentation and aggregation, chemical 
+transformations, and biological mediation. Modeling such systems deterministically 
+would require resolving not only the trajectories of particles, but also their 
+evolving chemical associations and interactions with flow and substrate. These 
+interactions are complex, coupled, and often unobservable at the relevant scales.
+
+As a result, the uncertainty in these systems is primarily **epistemic**: even 
+if the underlying processes were deterministic in principle, our observational 
+access to them is constrained by resolution, cost, and scale. We are not observing 
+microstates; we are observing the **aggregate outcome** of many such microstates. 
+This means that what we can reliably work with are **distributions**—empirical 
+summaries over configurations that could have produced the observed signals.
+
+Traditional modeling frameworks, such as **stochastic differential equations (SDEs)**, 
+attempt to represent such systems as random processes evolving in continuous time. 
+For example, the Ornstein–Uhlenbeck process (Uhlenbeck & Ornstein, 1930; Gardiner, 2009) 
+models a system with random fluctuations and a tendency to return toward a 
+long-term mean. SDEs describe the **trajectories** of hypothetical realizations 
+of the system in state space.
+
+However, these trajectories are rarely observable in complex environmental systems. 
+What is typically observed is the **distribution of outcomes** across time or space. 
+This distinction—between trajectories of individual realizations and the distributional 
+shape of an ensemble—is critical. The **Fokker–Planck equation (FPE)** provides 
+a bridge between the two: given an SDE, the FPE describes the time evolution of 
+the **probability density function** of the system's state (Risken, 1996). In 
+this sense, FPEs translate trajectory-level models into distribution-level dynamics.
+
+But even FPE-based approaches face difficulties: they require specifying both drift 
+and diffusion terms (often empirically unresolvable), and the resulting PDEs may 
+be analytically or numerically intractable for high-dimensional or nonlinear systems.
+
+This is where **information geometry (IG)** enters as a powerful alternative. IG 
+bypasses the need to model the system’s microstate dynamics or solve PDEs. Instead, 
+it treats the evolving distributions themselves as points on a **statistical manifold** 
+(Amari & Nagaoka, 2000). Distances, divergences, and curvature on this manifold 
+encode structural information about how the system’s constraints—and by extension, 
+its organization—evolve over time. Rather than tracking individual paths or solving 
+equations of motion, IG focuses on how the **shape of the signal distribution changes**, 
+using tools like:
+
+- **Shannon entropy** to quantify uncertainty,
+- **Bhattacharyya and Wasserstein distances** to track distributional change,
+- **Fisher information metrics** to capture sensitivity and curvature in the signal space.
+
+This shape-based perspective aligns closely with the needs of watershed biogeochemistry, 
+where disturbance events (e.g., wildfire, logging, landslides) often lead to 
+qualitative shifts in signal distributions—introducing new modes, broadening tails, 
+or compressing signal variance. Information geometry thus provides a principled 
+framework for **analyzing, comparing, and interpreting distributions** without 
+requiring access to the inaccessible.
+
+> **Summary**: When system trajectories are unobservable and Fokker–Planck solutions 
+are intractable, the geometry of evolving signal distributions offers a robust and 
+scalable way to track constraint reorganization in disturbed watersheds.
+
+
+
+
+
+- Manifold of constraints
+- Curvature, divergence, entropy

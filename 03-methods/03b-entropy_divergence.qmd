@@ -1,0 +1,3 @@
+# Entropy and Divergence Metrics
+
+Bhattacharyya, Fisher-Rao, Wasserstein explained.

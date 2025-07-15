@@ -1,0 +1,3 @@
+# Conclusion
+
+From signal shape to constraint inference: where next?

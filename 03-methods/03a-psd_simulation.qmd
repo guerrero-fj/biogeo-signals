@@ -1,0 +1,3 @@
+# Simulating PSDs
+
+Code and methods for core simulation and PSD shape control.
