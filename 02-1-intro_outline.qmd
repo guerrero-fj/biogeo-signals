@@ -1,0 +1,111 @@
+---
+title: "02-1-biogeosignals"
+editor: source
+---
+# Document Outline: Conceptual Framework for Biogeochemical Signals
+
+This document formalizes the theoretical scaffold for analyzing biogeochemical 
+signals using information geometry, constrained fluctuation theory, 
+and observer-relative inference. It integrates Prigogine’s triadic framework 
+(structure, fluctuation, function), builds on signal-as-constraint logic, 
+and provides a bridge from empirical data (e.g., sediment cores, PSDs, DOC) to 
+system-level inference.
+
+---
+
+## 1. Introduction
+
+* Why biogeochemical signals matter
+* Limitations of traditional output-based or model-centric approaches
+* Introducing the shift: from deterministic state models to probabilistic constraint geometry
+* Core proposition: **Signals are constrained fluctuations, not deterministic outputs**
+
+## 2. Prigogine’s Trinomial Recast for Biogeochemical Systems
+
+### 2.1 Structure–Fluctuation–Function
+
+* Define each element in the context of watershed biogeochemistry
+* Their mutual co-generation and dynamic interplay
+* Extended triadic closure:
+
+  * Function = Structure + Fluctuation
+  * Structure = Function + Fluctuation
+  * Fluctuation = Structure + Function
+
+### 2.2 Functional Irreversibility
+
+* Functional reorganization post-disturbance
+* How system function (e.g., carbon export) can encode structural transformation
+* Why time-reversibility assumptions fail in ecological systems
+
+## 3. Signals as Projections of Constraint Evolution
+
+### 3.1 Signal = Observed Probability Distribution Over Time
+
+* PSD, DOC, DSi as examples
+* Each signal is a distribution shaped by the system’s structural constraints and functional dynamics
+
+### 3.2 Manifold Embedding
+
+* $\{p_t\} \subset \mathcal{M} \subset \Delta^n$: signal trajectory in statistical space
+* Geometry of $\mathcal{M}$: defined by feasible constrained states
+* Divergence, entropy, and curvature as indicators of system evolution
+
+## 4. Entropy and Divergence Recast
+
+### 4.1 Beyond the Second Law
+
+* Classical view: entropy = ignorance
+* Prigogine-GEUP view: entropy = structural evolution
+* Implication: entropy change can mark bifurcations or reorganizations
+
+### 4.2 Divergence Asymmetry as Directionality
+
+* KL(p || q) ≠ KL(q || p) implies time-asymmetric transformation
+* Use as empirical detector of constraint reordering
+
+## 5. The Role of the Observer
+
+* Observation is embedded, not external
+* Measurement constraints are part of the system’s structure
+* Introduce: **Embedded Inference Principle**
+
+  * $\mathcal{C}_{\text{observer}} \cap \mathcal{C}_{\text{system}} \neq \emptyset$
+* Signals are only visible where observer and system constraints align
+
+## 6. The Inference Loop: From Signal to Structure
+
+### 6.1 No Need for Full Phase Space
+
+* Unlike classical mechanics, full microstate knowledge is not required
+* Geometry of signal evolution encodes latent constraint shifts
+
+### 6.2 Entropy Arcs and Bifurcations
+
+* Use signal shape, entropy profile, and divergence transitions to identify structural events
+* Application to sediment core layers, DOC time series, or post-disturbance PSDs
+
+## 7. Integrating Information Geometry with Biogeochemical Models
+
+* Statistical manifolds as extensions of process-based models
+* Fisher-Rao and Wasserstein metrics as tools for constraint surface detection
+* Linking observed divergence to known process changes (e.g., vegetation loss, channel erosion)
+
+## 8. Application Scenarios
+
+* Sediment core analysis (e.g., landslide-triggered reorganization)
+* DOC/DIC after wildfire (constraint release and re-entrenchment)
+* Streamflow signal transformation post-clearcut
+
+## 9. Conceptual and Mathematical Summary
+
+* Signals are not about states—they are **expressions of constraint evolution**
+* System structure, function, and fluctuation **co-generate**
+* Observation is **not passive**—it is structurally entangled
+* Information geometry provides a **quantitative, observer-aware lens** for tracking system evolution
+
+## Appendix
+
+* Diagram: Triadic Closure + Observer-Relative Inference Loop
+* Formal definitions and notations for $\mathcal{M}$, entropy, divergence
+* Recommended software packages and metric implementations (R, Python)
